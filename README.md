@@ -1,7 +1,7 @@
 ## POC do Kafka utilizando Spring Boot
 
-*Instruções:
-*
+*Instruções:*
+
 ### Baixar o Kafka:
 ------------
 - `https://www.apache.org/dyn/closer.cgi?path=/kafka/2.2.0/kafka-2.2.0-src.tgz`
@@ -47,4 +47,4 @@
 
 - `https://emmanuelneri.com.br/2019/06/04/kafka-no-spring-boot/`
 
-
+- `http://developers.socialminer.com/2017/11/02/descomplicando-o-apache-kafka/`

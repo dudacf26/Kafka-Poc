@@ -43,7 +43,7 @@
 
 - `https://medium.com/oril/spring-boot-with-apache-kafka-2b1ecb88a63f`
 
-- `https://www.confluent.io/blog/apache-kafka-spring-boot-application?source=post_page---------------------------`
+- `https://www.confluent.io/blog/apache-kafka-spring-boot-application?source=post_page`
 
 - `https://emmanuelneri.com.br/2019/06/04/kafka-no-spring-boot/`
 

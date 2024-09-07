@@ -46,11 +46,3 @@ Acesse o seguinte URL e adicione sua mensagem como um parâmetro de consulta:
 ```perl
 http://localhost:9000/kafka/producer?message=mensagem%20que%20quer%20mandar
 ```
-### Recursos Adicionais 📚
-
-Aqui estão algumas leituras recomendadas sobre Apache Kafka e Spring Boot:
-
-Spring Boot com Apache Kafka no Medium
-Blog da Confluent sobre Apache Kafka e Spring Boot
-Kafka no Spring Boot - Emmanuel Neri
-Descomplicando o Apache Kafka - SocialMiner

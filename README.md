@@ -1,50 +1,56 @@
-## POC do Kafka utilizando Spring Boot
+# POC do Kafka com Spring Boot 🚀
 
-*Instruções:*
+Este repositório contém uma Prova de Conceito (POC) para integração do Apache Kafka com Spring Boot. A seguir estão as instruções para configurar e testar a aplicação.
 
-### Baixar o Kafka:
-------------
-- `https://www.apache.org/dyn/closer.cgi?path=/kafka/2.2.0/kafka-2.2.0-src.tgz`
+## Pré-requisitos 🛠️
 
+- Java 8 ou superior
+- [Apache Kafka 2.2.0](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.2.0/kafka-2.2.0-src.tgz)
+- [Apache Zookeeper](https://www.apache.org/dyn/closer.cgi/zookeeper/)
 
-### Baixar o Zookeper: 
-------------
-- `https://www.apache.org/dyn/closer.cgi/zookeeper/`
+## Instruções de Configuração 🔧
 
+1. **Baixar o Apache Kafka**:
+   - [Clique aqui para baixar](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.2.0/kafka-2.2.0-src.tgz)
 
-### Start Zookeeper (Via terminal Linux)
-------------
-- `bin/zookeeper-server-start.sh config/zookeeper.properties
-`
+2. **Baixar o Apache Zookeeper**:
+   - [Clique aqui para baixar](https://www.apache.org/dyn/closer.cgi/zookeeper/)
 
-### Start Kafka Server (Via terminal Linux)
-------------
-- `bin/kafka-server-start.sh config/server.properties
-`
+3. **Iniciar o Zookeeper**:
+   - No terminal Linux, execute:
+     ```bash
+     bin/zookeeper-server-start.sh config/zookeeper.properties
+     ```
 
-------------
+4. **Iniciar o Servidor Kafka**:
+   - Em um novo terminal Linux, execute:
+     ```bash
+     bin/kafka-server-start.sh config/server.properties
+     ```
 
+5. **Iniciar a Aplicação Spring Boot**:
+   - Importe o projeto na sua IDE e execute a aplicação.
 
+## Como Testar 🧪
 
-- *Depois dos passos acima inicie a aplicação na sua IDEA.*
+### Usando cURL
 
-### Como testar?
+No terminal, execute o seguinte comando para enviar uma mensagem para o Kafka:
+```bash
+curl -X POST -F 'message=mensagem que quer mandar' http://localhost:9000/kafka/producer
+```
 
-- **Via cURL (Terminal):**
+### Usando Postman ou Navegador
 
-> curl -X POST -F 'message=**mensagem que quer mandar**' http://localhost:9000/kafka/producer
+Acesse o seguinte URL e adicione sua mensagem como um parâmetro de consulta:
+```perl
+http://localhost:9000/kafka/producer?message=mensagem%20que%20quer%20mandar
+```
+### Recursos Adicionais 📚
 
-- **Via Postman/navegador:**
+Aqui estão algumas leituras recomendadas sobre Apache Kafka e Spring Boot:
 
-> http://localhost:9000/kafka/producer?message= **mensagem que quer mandar**
-
-
-### Publicações interessantes sobre Kafka:
-
-- `https://medium.com/oril/spring-boot-with-apache-kafka-2b1ecb88a63f`
-
-- `https://www.confluent.io/blog/apache-kafka-spring-boot-application?source=post_page`
-
-- `https://emmanuelneri.com.br/2019/06/04/kafka-no-spring-boot/`
-
-- `http://developers.socialminer.com/2017/11/02/descomplicando-o-apache-kafka/`
+Spring Boot com Apache Kafka no Medium
+Blog da Confluent sobre Apache Kafka e Spring Boot
+Kafka no Spring Boot - Emmanuel Neri
+Descomplicando o Apache Kafka - SocialMiner
